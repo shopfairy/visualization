@@ -4,12 +4,21 @@ strokeWeight(2);
 stroke(255);
 fill(100);
 
-//for columns
-for (int x = 0; x < width; x = x + 20){
-  rect(x, 0, 20, 20);
+//columns
+for (int x = 0; x < width; x = x + 100){
+  rect(x, 0, 100, 100);
 }
 
-//for rows 
-for(int y = 0; y < height; y = y + 20){
-    rect(0, y, 20, 20);
+//rows
+for(int y = 0; y < height; y = y + 100){
+    rect(0, y, 100, 100);
+}
+
+//How to make sqaure inside? 
+
+for (int x = 0; x < width; x = x + 100){
+  for(int y = 0; y < height; y = y + 100){
+      rect(x, y, 100, 100);
+      println("X: "+x+" Y:"+y);
+  }
 }
